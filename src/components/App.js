@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { getOperatorProfile } from "../actions/UserActions";
 import { selectUser } from "../selectors/user";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -20,16 +20,14 @@ const App = () => {
 
   return (
     <ThemeProvider theme={appTheme}>
-      <BrowserRouter>
-        <CssBaseline />
-        <Routes>
-          {user.isLogged ? (
-            <Route path='*' exact element={<Dashboard />} />
-          ) : (
-            <Route path='*' exact element={<WelcomePage />} />
-          )}
-        </Routes>
-      </BrowserRouter>
+      <CssBaseline />
+      <Routes>
+        {user.isLogged ? (
+          <Route path='*' exact element={<Dashboard />} />
+        ) : (
+          <Route path='*' exact element={<WelcomePage />} />
+        )}
+      </Routes>
     </ThemeProvider>
   );
 };
