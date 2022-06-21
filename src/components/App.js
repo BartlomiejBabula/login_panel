@@ -23,9 +23,9 @@ const App = () => {
       <CssBaseline />
       <Routes>
         {user.isLogged ? (
-          <Route path='*' exact element={<Dashboard />} />
+          <Route path='/login_panel/*' exact element={<Dashboard />} />
         ) : (
-          <Route path='*' exact element={<WelcomePage />} />
+          <Route path='/login_panel/*' exact element={<WelcomePage />} />
         )}
       </Routes>
     </ThemeProvider>

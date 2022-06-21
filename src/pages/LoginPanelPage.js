@@ -191,7 +191,10 @@ const LoginPanelPage = () => {
                 variant='text'
                 sx={{ displey: "inline", pb: 0.8 }}
                 onClick={() => {
-                  navigate({ pathname: "/signup" }, { replace: true });
+                  navigate(
+                    { pathname: "/login_panel/signup" },
+                    { replace: true }
+                  );
                 }}
               >
                 Create

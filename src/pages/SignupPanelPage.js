@@ -93,7 +93,7 @@ const SignupPanelPage = () => {
         variant='contained'
         sx={{ width: 120, height: 50 }}
         onClick={() => {
-          navigate({ pathname: "/" }, { replace: true });
+          navigate({ pathname: "/login_panel/" }, { replace: true });
         }}
       >
         Log in
@@ -204,7 +204,7 @@ const SignupPanelPage = () => {
                 variant='text'
                 sx={{ displey: "inline", pb: 0.8 }}
                 onClick={() => {
-                  navigate({ pathname: "/" }, { replace: true });
+                  navigate({ pathname: "/login_panel/" }, { replace: true });
                 }}
               >
                 Log in
