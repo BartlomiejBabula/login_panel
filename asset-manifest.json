@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/login_panel/static/js/main.f8e242c2.js",
+    "index.html": "/login_panel/index.html",
+    "main.f8e242c2.js.map": "/login_panel/static/js/main.f8e242c2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f8e242c2.js"
+  ]
+}
